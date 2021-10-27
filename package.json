@@ -1,0 +1,23 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Film en plein air",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siakamansaly/projet3.git"
+  },
+  "author": "Siaka MANSALY",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/siakamansaly/projet3/issues"
+  },
+  "homepage": "https://github.com/siakamansaly/projet3#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

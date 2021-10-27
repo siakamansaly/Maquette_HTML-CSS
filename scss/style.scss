@@ -1,0 +1,33 @@
+@import "variable_overrides";
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+           url("../fonts/BebasNeue-Regular.woff") format("woff");
+   }
+   @font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.ttf") format("ttf");
+   }
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    padding-top: 6rem;
+}
+
+.hero {
+    max-height: 550px;
+    min-height: 550px;
+    background:  linear-gradient(
+        rgba(15, 5, 107, 0.6), 
+        rgba(15, 5, 107, 0.6)
+      ), url('../images/header.png') no-repeat 50% 50%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1,h2,h3{
+    letter-spacing: 0.15em;
+}
+h4,h5{
+    letter-spacing: 0.06em;
+}
