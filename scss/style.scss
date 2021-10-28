@@ -12,11 +12,15 @@
 
 body {
     padding-top: 6rem;
+    font-size: 18px;
+    overflow-x: hidden;
+    margin-bottom:0;
+    padding-bottom: 0;
 }
 
 .hero {
-    max-height: 550px;
-    min-height: 550px;
+    max-height: 630px;
+    min-height: 630px;
     background:  linear-gradient(
         rgba(15, 5, 107, 0.6), 
         rgba(15, 5, 107, 0.6)
@@ -25,9 +29,76 @@ body {
     background-size: cover;
     position: relative;
 }
-h1,h2,h3{
+
+.max-height-hero {
+    max-height: 630px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.citation p
+{
+    font-size: 1.5rem;
+}
+
+@mixin letter-spacing-big {
     letter-spacing: 0.15em;
 }
-h4,h5{
+@mixin letter-spacing-small {
     letter-spacing: 0.06em;
 }
+
+h1 {
+    @include letter-spacing-big;
+}
+
+h2 {
+    @include letter-spacing-big;
+}
+
+h3 {
+    @include letter-spacing-big;
+}
+
+h4 {
+    @include letter-spacing-small;
+}
+
+h5 {
+    @include letter-spacing-small;
+}
+
+ul.navbar-nav .nav-item:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    transition: width .9s ease, background-color .9s ease;
+}
+.navbar-nav .nav-item:hover:after {
+    width: 100%;
+    background: $secondary;
+}
+
+#social-test {
+    font-size: 30px;
+    li a {
+      color: $white;
+      cursor: pointer;
+      transition: ease .3s;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  
+  .social:hover > li {
+    opacity: 0.5;
+  }
+  
+  .social:hover > li:hover {
+    opacity: 1;
+  }
+  footer {
+      margin-bottom:0;
+    padding-bottom: 0;
+  }
