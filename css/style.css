@@ -11141,6 +11141,10 @@ body {
   padding-bottom: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 .hero {
   max-height: 630px;
   min-height: 630px;
@@ -11219,6 +11223,15 @@ footer {
   bottom: 20px;
   right: 20px;
   display: none;
+}
+
+.ImageHeader {
+  height: 300px;
+  max-height: 300px;
+  background: linear-gradient(rgba(15, 5, 107, 0.6), rgba(15, 5, 107, 0.6)), url("../images/header.png") no-repeat 50% 50%;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
