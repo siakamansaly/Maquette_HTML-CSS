@@ -11145,6 +11145,15 @@ p {
   text-align: justify;
 }
 
+.logo_head {
+  width: 180px;
+  height: 72px;
+}
+
+#myDateFilms {
+  cursor: pointer;
+}
+
 .hero {
   max-height: 630px;
   min-height: 630px;
