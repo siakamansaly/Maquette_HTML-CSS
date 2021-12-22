@@ -11,18 +11,20 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
-    /*padding-top: 6rem;*/
-    font-size: 18px;
-    overflow-x: hidden;
-    margin-bottom:0;
-    padding-bottom: 0;
+        font-size: 18px;
+        overflow-x: hidden;
+        margin-bottom:0;
+        padding-bottom: 0;
 }
+
 @mixin text-justify {
-    text-align: justify;
+        text-align: justify;
 }
-p{
+
+p {
     @include text-justify;
 }
+
 .logo_head
 {
     width: 180px;
